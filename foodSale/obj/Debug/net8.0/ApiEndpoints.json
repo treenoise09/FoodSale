@@ -1,0 +1,96 @@
+[
+  {
+    "ContainingType": "foodSale.Controllers.FoodSaleController",
+    "Method": "GetAllFoodSales",
+    "RelativePath": "api/FoodSale",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageIndex",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "foodSale.Models.PaginateFoodSaleList",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "foodSale.Controllers.FoodSaleController",
+    "Method": "CreateFoodSale",
+    "RelativePath": "api/FoodSale",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "foodSale",
+        "Type": "foodSale.Model.FoodSale",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "foodSale.Model.FoodSale",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "foodSale.Controllers.FoodSaleController",
+    "Method": "UpdateFoodSale",
+    "RelativePath": "api/FoodSale/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "foodSale",
+        "Type": "foodSale.Model.FoodSale",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "foodSale.Controllers.FoodSaleController",
+    "Method": "DeleteFoodSale",
+    "RelativePath": "api/FoodSale/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
